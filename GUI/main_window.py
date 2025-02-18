@@ -4,18 +4,18 @@ from PyQt5.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QFil
 from GUI.error_window import ErrorWindow
 from GUI.graph_window import GraphWindow
 from GUI.loading_window import LoadingWindow
-from GUI.top_bar_with_icons import create_top_bar_with_icons, create_button
+from GUI.top_bar_with_icons import create_button
 from core.data_frame_utils import validate_file_format
+from core.json_table_handler import JsonFileHandler
 from core.settings_handler import get_resource_path
 from core.threads.file_processing_thread import FileProcessingThread
-from logger import logger
 
 
 class MainWindow(QMainWindow):
     def __init__(self, app):
         super().__init__()
         self.app = app
-
+        self.json_file_handler = JsonFileHandler(get_resource_path("library/table.json"))
         self.setWindowTitle("Graph Analyst")
         self.setStyleSheet("background-color: #f3f3f3;")
         self.setWindowIcon(QIcon(get_resource_path("assets/icon.png")))
@@ -29,10 +29,6 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.main_widget)
         self.layout = QVBoxLayout()
 
-        white_strip, grey_strip, _, _ = create_top_bar_with_icons(self, None, None, app, None)
-
-        self.layout.addWidget(white_strip)
-        self.layout.addWidget(grey_strip)
 
         button_layout = QHBoxLayout()
         self.select_file_button = create_button("Выбрать файл", get_resource_path("assets/iconAddFile.png"))

@@ -11,7 +11,7 @@ from logger import logger
 class HelpWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("Image Duplicate Finder")
+        self.setWindowTitle("Graph Analyst")
         self.setGeometry(100, 100, 800, 600)
         self.setWindowIcon(QIcon(get_resource_path('assets/icon.png')))
 
@@ -61,7 +61,7 @@ class HelpWindow(QMainWindow):
 
     def load_html(self, file_name):
         base_dir = os.path.dirname(__file__)
-        file_path = os.path.join(base_dir, 'help_html', 'ru', file_name)
+        file_path = os.path.join(base_dir, 'help_html', file_name)
         try:
             with open(get_resource_path(file_path), 'r', encoding='utf-8') as file:
                 html_content = file.read()

@@ -5,7 +5,7 @@ from PyQt5.QtCore import Qt, QPoint
 from PyQt5.QtGui import QFont, QColor, QBrush
 from PyQt5.QtWidgets import QApplication, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QAction, QMenu
 
-from GUI.table_utils import make_bold
+from GUI.table_utils import make_bold, get_param_coil
 
 
 class TableApp(QWidget):
@@ -53,7 +53,7 @@ class TableApp(QWidget):
 
         for row in range(3, 18):
             for col in range(2, 22):
-                sample, time_ms, type_, type_2, subtype = self.get_param_coil(row, col)
+                sample, time_ms, type_, type_2, subtype = get_param_coil(row, col)
                 filename = self.get_filename(sample, time_ms, type_, type_2, subtype)
                 if filename:
                     self.table.setItem(row, col, QTableWidgetItem(filename))
@@ -184,7 +184,7 @@ class TableApp(QWidget):
     def save_to_json(self, item):
         if item.row() == self.selected_row and item.column() == self.selected_col:
             new_value = item.text()
-            sample, time_ms, type_, type_2, subtype = self.get_param_coil(self.selected_row, self.selected_col)
+            sample, time_ms, type_, type_2, subtype = get_param_coil(self.selected_row, self.selected_col)
 
             for entry in self.data:
                 if (entry["sample"] == sample and entry["time_ms"] == time_ms and
@@ -195,20 +195,6 @@ class TableApp(QWidget):
             with open(self.json_path, "w", encoding="utf-8") as file:
                 json.dump(self.data, file, indent=4, ensure_ascii=False)
             self.table.itemChanged.disconnect(self.save_to_json)
-
-    def get_param_coil(self, row, col):
-        subtype = "сл." if col % 2 == 0 else "F"
-
-        type_2 = "вест S" if ((col - 2) // 2) % 2 == 0 else "приш"
-
-        type_dict = {range(2, 6): "без провр", range(6, 10): "15 с", range(10, 14): "30 с",
-                     range(14, 18): "45 с", range(18, 22): "60 с"}
-        type_ = next((v for k, v in type_dict.items() if col in k), None)
-
-        time_ms = [2, 5, 10][row % 3]
-
-        sample = int(41 + (row - 3) // 3)
-        return sample, time_ms, type_, type_2, subtype
 
     def get_filename(self, sample, time_ms, type_, type_2, subtype):
         for item in self.data:

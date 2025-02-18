@@ -1,0 +1,2402 @@
+[
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "3.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "4.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "7.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "8.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "109.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "110.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "111.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "112.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "121.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "122.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "123.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "124.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "181.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "182.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "183.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "184.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "241.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "242.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "243.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "244.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "1.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "2.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "9.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "10.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "113.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "114.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "115.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "116.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "125.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "126.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "127.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "128.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "185.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "186.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "187.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "188.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "245.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "246.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "247.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "248.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "5.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "6.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "11.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "12.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "117.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "118.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "119.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "120.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "129.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "130.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "131.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "132.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "189.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "190.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "191.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "192.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "249.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "250.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "251.txt"
+    },
+    {
+        "sample": 41,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "252.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "13.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "14.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "23.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "24.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "61.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "62.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "63.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "64.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "133.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "134.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "135.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "136.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "193.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "194.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "195.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "196.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "253.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "254.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "255.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "256.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "15.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "16.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "17.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "18.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "65.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "66.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "67.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "68.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "137.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "138.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "139.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "140.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "197.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "198.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "199.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "200.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "257.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "258.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "259.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "260.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "19.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "20.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "21.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "22.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "69.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "70.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "71.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "72.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "141.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "142.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "143.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "144.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "201.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "202.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "203.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "204.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "261.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "262.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "263.txt"
+    },
+    {
+        "sample": 42,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "264.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "25.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "26.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "27.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "28.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "73.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "74.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "75.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "76.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "145.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "146.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "147.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "148.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "205.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "206.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "207.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "208.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "265.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "266.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "267.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "268.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "29.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "30.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "31.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "32.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "77.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "78.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "79.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "80.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "149.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "150.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "151.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "152.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "209.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "210.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "211.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "212.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "269.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "270.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "271.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "272.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "33.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "34.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "35.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "36.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "81.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "82.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "83.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "84.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "153.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "154.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "155.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "156.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "213.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "214.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "215.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "216.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "273.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "274.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "275.txt"
+    },
+    {
+        "sample": 43,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "276.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "37.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "38.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "39.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "40.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "85.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "86.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "87.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "88.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "157.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "158.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "159.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "160.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "217.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "218.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "219.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "220.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "277.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "278.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "279.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "280.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "41.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "42.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "43.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "44.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "89.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "90.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "91.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "92.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "161.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "162.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "163.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "164.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "221.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "222.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "223.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "224.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "281.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "282.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "283.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "284.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "45.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "46.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "47.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "48.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "93.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "94.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "95.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "96.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "165.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "166.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "167.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "168.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "225.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "226.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "227.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "228.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "285.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "286.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "287.txt"
+    },
+    {
+        "sample": 44,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "288.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "49.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "50.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "51.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "52.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "97.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "98.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "99.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "100.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "169.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "170.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "171.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "172.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "229.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "230.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "231.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "232.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "289.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "290.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "291.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 2,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "292.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "53.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "54.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "55.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "56.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "101.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "102.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "103.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "104.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "173.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "174.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "175.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "176.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "233.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "234.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "235.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "236.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "293.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "294.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "295.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 5,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "296.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "57.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "58.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "59.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "без провр",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "60.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "105.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "106.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "107.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "15 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "108.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "177.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "178.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "179.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "30 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "180.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "237.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "238.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "239.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "45 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "240.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "сл.",
+        "filename": "297.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "вест S",
+        "subtype": "F",
+        "filename": "298.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "сл.",
+        "filename": "299.txt"
+    },
+    {
+        "sample": 45,
+        "time_ms": 10,
+        "type": "60 с",
+        "type_2": "приш",
+        "subtype": "F",
+        "filename": "300.txt"
+    }
+]
