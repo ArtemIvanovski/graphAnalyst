@@ -6,14 +6,15 @@ from core.parser import parse_file_with_metadata
 class FileProcessingThread(QThread):
     finished = pyqtSignal(dict, str)
 
-    def __init__(self, file_path):
+    def __init__(self, file_path, json_file_handler):
         super().__init__()
         self.file_path = file_path
+        self.json_file_handler = json_file_handler
         self.data_frame = None
 
     def run(self):
         try:
-            metadata, data = parse_file_with_metadata(self.file_path)
+            metadata, data = parse_file_with_metadata(self.file_path, self.json_file_handler)
             self.data_frame = data
             self.finished.emit(metadata, "success")
         except Exception as e:

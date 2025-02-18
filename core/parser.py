@@ -1,14 +1,18 @@
+import os
+
 import pandas as pd
 
 
-def parse_file_with_metadata(file_path):
+def parse_file_with_metadata(file_path, json_file_handler):
     with open(file_path, 'r') as file:
         lines = file.readlines()
 
     metadata = parse_metadata(lines)
+    info = metadata.copy()
+    info.update(json_file_handler.find_by_filename(os.path.basename(file_path)))
     df = parse_data(lines)
 
-    return metadata, df
+    return info, df
 
 
 def parse_metadata(lines):

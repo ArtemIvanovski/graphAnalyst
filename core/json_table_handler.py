@@ -34,3 +34,15 @@ class JsonFileHandler:
                 self.save_data()
                 return True
         return False
+
+    def find_by_filename(self, filename):
+        for entry in self.data:
+            if entry["filename"] == filename:
+                return {
+                    "sample": entry["sample"],
+                    "time_ms": entry["time_ms"],
+                    "type": entry["type"],
+                    "type_2": entry["type_2"],
+                    "subtype": entry["subtype"]
+                }
+        return None

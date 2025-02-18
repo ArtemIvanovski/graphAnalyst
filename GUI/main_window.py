@@ -29,7 +29,6 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.main_widget)
         self.layout = QVBoxLayout()
 
-
         button_layout = QHBoxLayout()
         self.select_file_button = create_button("Выбрать файл", get_resource_path("assets/iconAddFile.png"))
         self.select_file_button.clicked.connect(self.select_file)
@@ -57,7 +56,7 @@ class MainWindow(QMainWindow):
         self.loading_window = LoadingWindow(self)
         self.loading_window.show()
 
-        self.file_processing_thread = FileProcessingThread(file_path)
+        self.file_processing_thread = FileProcessingThread(file_path, self.json_file_handler)
         self.file_processing_thread.finished.connect(self.on_processing_finished)
         self.file_processing_thread.start()
 
