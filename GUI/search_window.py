@@ -6,14 +6,11 @@ from PyQt5.QtWidgets import (
     QHBoxLayout, QLabel, QComboBox
 )
 
-from GUI.error_window import ErrorWindow
-from GUI.graph_window import GraphWindow
-from GUI.loading_window import LoadingWindow
+from core.proccesing_mixin import ProcessingMixin
 from core.settings_handler import get_resource_path
-from core.threads.file_processing_thread import FileProcessingThread
 
 
-class SearchWindow(QWidget):
+class SearchWindow(QWidget, ProcessingMixin):
     def __init__(self, json_file_handler):
         super().__init__()
         self.filename = None
@@ -107,26 +104,3 @@ class SearchWindow(QWidget):
             self.filename = selected_item.text().split(" | ")[0]
             filepath = os.path.join("./library/", self.filename)
             self.start_processing(filepath)
-
-    def start_processing(self, file_path):
-        self.loading_window = LoadingWindow(self)
-        self.loading_window.show()
-
-        self.file_processing_thread = FileProcessingThread(file_path, self.json_file_handler)
-        self.file_processing_thread.finished.connect(self.on_processing_finished)
-        self.file_processing_thread.start()
-
-    def on_processing_finished(self, metadata, status):
-        self.loading_window.close()
-
-        if status == "error":
-            error_dialog = ErrorWindow(f"Ошибка обработки файла: {metadata.get('error', 'Неизвестная ошибка')}")
-            error_dialog.exec_()
-            return
-
-        data_frame = self.file_processing_thread.data_frame
-        self.open_graph_window(metadata, data_frame)
-
-    def open_graph_window(self, metadata, data_frame):
-        self.graph_window = GraphWindow(metadata, data_frame, self.filename)
-        self.graph_window.show()

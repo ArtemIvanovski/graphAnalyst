@@ -5,21 +5,20 @@ from PyQt5.QtGui import QFont, QIcon, QMovie
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog
 
 from GUI.error_window import ErrorWindow
-from GUI.graph_window import GraphWindow
 from GUI.help_window import HelpWindow
-from GUI.loading_window import LoadingWindow
 from GUI.search_window import SearchWindow
 from GUI.table_window import TableWindow
 from core.data_frame_utils import validate_file_format
 from core.json_table_handler import JsonFileHandler
+from core.proccesing_mixin import ProcessingMixin
 from core.settings_handler import get_resource_path
-from core.threads.file_processing_thread import FileProcessingThread
 
 
-class MainWindow(QWidget):
+class MainWindow(QWidget, ProcessingMixin):
     def __init__(self):
         super().__init__()
 
+        self.filename = None
         self.search_window = None
         self.file_processing_thread = None
         self.loading_window = None
@@ -111,11 +110,9 @@ class MainWindow(QWidget):
         self.search_window.show()
 
     def open_manual_graph(self):
+        """Открывает файл вручную."""
         file_path, _ = QFileDialog.getOpenFileName(
-            self,
-            "Выберите файл .txt",
-            "./library/",
-            "Text Files (*.txt)"
+            self, "Выберите файл .txt", "./library/", "Text Files (*.txt)"
         )
         if not file_path:
             return
@@ -124,28 +121,7 @@ class MainWindow(QWidget):
             error_dialog = ErrorWindow("Неверный формат файла. Пожалуйста, выберите корректный файл.")
             error_dialog.exec_()
             return
+
         self.file_path = file_path
-        self.start_processing(file_path)
-
-    def start_processing(self, file_path):
-        self.loading_window = LoadingWindow(self)
-        self.loading_window.show()
-
-        self.file_processing_thread = FileProcessingThread(file_path, self.json_file_handler)
-        self.file_processing_thread.finished.connect(self.on_processing_finished)
-        self.file_processing_thread.start()
-
-    def on_processing_finished(self, metadata, status):
-        self.loading_window.close()
-
-        if status == "error":
-            error_dialog = ErrorWindow(f"Ошибка обработки файла: {metadata.get('error', 'Неизвестная ошибка')}")
-            error_dialog.exec_()
-            return
-
-        data_frame = self.file_processing_thread.data_frame
-        self.open_graph_window(metadata, data_frame)
-
-    def open_graph_window(self, metadata, data_frame):
-        self.graph_window = GraphWindow(metadata, data_frame, os.path.basename(self.file_path))
-        self.graph_window.show()
+        self.filename = os.path.basename(self.file_path)
+        self.start_processing(file_path)  # Вызываем метод из ProcessingMixin
