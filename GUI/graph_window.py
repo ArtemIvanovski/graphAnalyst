@@ -255,8 +255,9 @@ class GraphWindow(QMainWindow):
         printer = QPrinter()
         printer.setOutputFormat(QPrinter.PdfFormat)
         printer.setOutputFileName(file_path)
+        printer.setOrientation(QPrinter.Landscape)
         printer.setResolution(300)
-
+        printer.setFullPage(True)
         painter = QPainter(printer)
         self.plot_widget.render(painter)
         painter.end()

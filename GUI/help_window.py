@@ -41,8 +41,8 @@ class HelpWindow(QMainWindow):
             ("Главная страница", "home.html"),
             ("Открытие графика через поиск", "open_graph_use_search.html"),
             ("Открытие графика вручную", "open_graph_manual.html"),
-            ("Открытие графика через таблицу", "tips.html"),
-            ("Работа с графиком", "tips.html")
+            ("Открытие графика через таблицу", "open_graph_use_table.html"),
+            ("Работа с графиком", "graph_work.html")
         ]
 
         for title, file in sections:
