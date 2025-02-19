@@ -1,7 +1,7 @@
 import os
 from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QTreeWidget, QTreeWidgetItem, QSplitter, \
     QTextBrowser
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QUrl
 from PyQt5.QtGui import QIcon
 
 from core.settings_handler import get_resource_path
@@ -39,8 +39,8 @@ class HelpWindow(QMainWindow):
 
         sections = [
             ("Главная страница", "home.html"),
-            ("Открытие графика через поиск", "quick_start.html"),
-            ("Открытие графика вручную", "setting_usage.html"),
+            ("Открытие графика через поиск", "open_graph_use_search.html"),
+            ("Открытие графика вручную", "open_graph_manual.html"),
             ("Открытие графика через таблицу", "tips.html"),
             ("Работа с графиком", "tips.html")
         ]
@@ -62,11 +62,19 @@ class HelpWindow(QMainWindow):
 
     def load_html(self, file_name):
         base_dir = os.path.dirname(__file__)
-        file_path = os.path.join(base_dir, 'help_html', file_name)
+        help_dir = os.path.join(base_dir, 'help_html')  # Директория с HTML-файлами
+        file_path = os.path.join(help_dir, file_name)
+
         try:
             with open(get_resource_path(file_path), 'r', encoding='utf-8') as file:
                 html_content = file.read()
+
+                # Устанавливаем пути поиска для изображений
+                self.text_browser.setSearchPaths([help_dir])
+
+                # Загружаем HTML-код
                 self.text_browser.setHtml(html_content)
+
         except FileNotFoundError:
             self.text_browser.setHtml("<h1>404</h1><p>Page not found</p>")
             logger.error("Page not found: " + file_name)
