@@ -42,11 +42,13 @@ class SearchWindow(QWidget, ProcessingMixin):
                                                 ["Не важно"] + self.json_file_handler.get_all_values_for_key("sample"))
         self.time_filter = self.create_filter("time_ms",
                                               ["Не важно"] + self.json_file_handler.get_all_values_for_key("time_ms"))
-        self.type_filter = self.create_filter("type", ["Не важно"] + self.json_file_handler.get_all_values_for_key("type"))
+        self.type_filter = self.create_filter("type",
+                                              ["Не важно"] + self.json_file_handler.get_all_values_for_key("type"))
         self.type2_filter = self.create_filter("type_2",
                                                ["Не важно"] + self.json_file_handler.get_all_values_for_key("type_2"))
         self.subtype_filter = self.create_filter("subtype",
-                                                 ["Не важно"] + self.json_file_handler.get_all_values_for_key("subtype"))
+                                                 ["Не важно"] + self.json_file_handler.get_all_values_for_key(
+                                                     "subtype"))
 
         filters_layout.addWidget(QLabel("Sample:"))
         filters_layout.addWidget(self.sample_filter)
@@ -58,14 +60,12 @@ class SearchWindow(QWidget, ProcessingMixin):
         filters_layout.addWidget(self.type2_filter)
         filters_layout.addWidget(QLabel("Subtype:"))
         filters_layout.addWidget(self.subtype_filter)
-        # Список результатов
+
         self.results_list = QListWidget(self)
 
-        # Кнопка "Открыть"
         self.open_button = QPushButton("Открыть", self)
         self.open_button.clicked.connect(self.open_selected_file)
 
-        # Добавление в основной макет
         layout.addWidget(self.search_input)
         layout.addLayout(filters_layout)
         layout.addWidget(self.results_list)
@@ -104,3 +104,4 @@ class SearchWindow(QWidget, ProcessingMixin):
             self.filename = selected_item.text().split(" | ")[0]
             filepath = os.path.join("./library/", self.filename)
             self.start_processing(filepath)
+

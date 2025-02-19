@@ -17,7 +17,7 @@ from core.settings_handler import get_resource_path
 class MainWindow(QWidget, ProcessingMixin):
     def __init__(self):
         super().__init__()
-
+        self.child_windows = []
         self.filename = None
         self.search_window = None
         self.file_processing_thread = None
@@ -36,16 +36,16 @@ class MainWindow(QWidget, ProcessingMixin):
         self.title_label.setFont(title_font)
         self.title_label.setAlignment(Qt.AlignCenter)
 
-        self.open_search_button = self.create_button("🔍 Открыть график через поиск", "assets/hint_search.gif")
+        self.open_search_button = self.create_button("🔍 Открыть график через поиск")
         self.open_search_button.clicked.connect(self.show_search_window)
 
-        self.open_table_button = self.create_button("📊 Открыть график через таблицу", "assets/hint_table.gif")
+        self.open_table_button = self.create_button("📊 Открыть график через таблицу")
         self.open_table_button.clicked.connect(self.show_table_window)
 
-        self.open_manual_button = self.create_button("📂 Открыть график вручную", "assets/hint_manual.gif")
+        self.open_manual_button = self.create_button("📂 Открыть график вручную")
         self.open_manual_button.clicked.connect(self.open_manual_graph)
 
-        self.user_guide_button = self.create_button("📖 Руководство пользователя", None)
+        self.user_guide_button = self.create_button("📖 Руководство пользователя")
         self.user_guide_button.clicked.connect(self.show_help_window)
 
         layout = QVBoxLayout()
@@ -64,7 +64,7 @@ class MainWindow(QWidget, ProcessingMixin):
         self.tooltip_label.setScaledContents(True)
         self.tooltip_label.hide()
 
-    def create_button(self, text, hint_gif_path):
+    def create_button(self, text):
         button = QPushButton(text, self)
         button.setFont(QFont("Arial", 12))
         button.setStyleSheet("""
@@ -78,39 +78,27 @@ class MainWindow(QWidget, ProcessingMixin):
                 background-color: #005A9E;
             }
         """)
-
-        if hint_gif_path:
-            button.enterEvent = lambda event, gif=hint_gif_path: self.show_gif_hint(event, gif)
-            button.leaveEvent = lambda event: self.hide_gif_hint()
-
         return button
-
-    def show_gif_hint(self, event, gif_path):
-        self.tooltip_label.setMovie(QMovie(get_resource_path(gif_path)))
-        self.tooltip_label.movie().start()
-        self.tooltip_label.setGeometry(event.globalX() + 20, event.globalY() - 50, 200, 120)
-        self.tooltip_label.show()
-
-    def hide_gif_hint(self):
-        self.tooltip_label.hide()
 
     def show_help_window(self):
         if not self.help_window:
             self.help_window = HelpWindow(self)
         self.help_window.show()
+        self.child_windows.append(self.help_window)
 
     def show_table_window(self):
         if not self.table_window:
             self.table_window = TableWindow(self.json_file_handler)
         self.table_window.show()
+        self.child_windows.append(self.table_window)
 
     def show_search_window(self):
         if not self.search_window:
             self.search_window = SearchWindow(self.json_file_handler)
         self.search_window.show()
+        self.child_windows.append(self.search_window)
 
     def open_manual_graph(self):
-        """Открывает файл вручную."""
         file_path, _ = QFileDialog.getOpenFileName(
             self, "Выберите файл .txt", "./library/", "Text Files (*.txt)"
         )
@@ -124,4 +112,11 @@ class MainWindow(QWidget, ProcessingMixin):
 
         self.file_path = file_path
         self.filename = os.path.basename(self.file_path)
-        self.start_processing(file_path)  # Вызываем метод из ProcessingMixin
+        self.start_processing(file_path)
+
+    def closeEvent(self, event):
+        for window in self.child_windows:
+            if window.isVisible():
+                window.close()
+
+        event.accept()
