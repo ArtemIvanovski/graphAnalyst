@@ -220,11 +220,3 @@ class TableWindow(QWidget):
     def open_graph_window(self, metadata, data_frame):
         self.graph_window = GraphWindow(metadata, data_frame, self.filename)
         self.graph_window.show()
-
-
-if __name__ == "__main__":
-    json_file_handler = JsonFileHandler(get_resource_path("library/table.json"))
-    app = QApplication(sys.argv)
-    window = TableWindow(json_file_handler)
-    window.show()
-    sys.exit(app.exec_())

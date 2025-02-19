@@ -39,9 +39,10 @@ class HelpWindow(QMainWindow):
 
         sections = [
             ("Главная страница", "home.html"),
-            ("Быстрый старт", "quick_start.html"),
-            ("Работа с настройками", "setting_usage.html"),
-            ("Маленькие хитрости", "tips.html")
+            ("Открытие графика через поиск", "quick_start.html"),
+            ("Открытие графика вручную", "setting_usage.html"),
+            ("Открытие графика через таблицу", "tips.html"),
+            ("Работа с графиком", "tips.html")
         ]
 
         for title, file in sections:

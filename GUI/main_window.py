@@ -8,6 +8,7 @@ from GUI.error_window import ErrorWindow
 from GUI.graph_window import GraphWindow
 from GUI.help_window import HelpWindow
 from GUI.loading_window import LoadingWindow
+from GUI.search_window import SearchWindow
 from GUI.table_window import TableWindow
 from core.data_frame_utils import validate_file_format
 from core.json_table_handler import JsonFileHandler
@@ -19,6 +20,7 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
 
+        self.search_window = None
         self.file_processing_thread = None
         self.loading_window = None
         self.file_path = None
@@ -36,6 +38,7 @@ class MainWindow(QWidget):
         self.title_label.setAlignment(Qt.AlignCenter)
 
         self.open_search_button = self.create_button("🔍 Открыть график через поиск", "assets/hint_search.gif")
+        self.open_search_button.clicked.connect(self.show_search_window)
 
         self.open_table_button = self.create_button("📊 Открыть график через таблицу", "assets/hint_table.gif")
         self.open_table_button.clicked.connect(self.show_table_window)
@@ -101,6 +104,11 @@ class MainWindow(QWidget):
         if not self.table_window:
             self.table_window = TableWindow(self.json_file_handler)
         self.table_window.show()
+
+    def show_search_window(self):
+        if not self.search_window:
+            self.search_window = SearchWindow(self.json_file_handler)
+        self.search_window.show()
 
     def open_manual_graph(self):
         file_path, _ = QFileDialog.getOpenFileName(

@@ -46,3 +46,26 @@ class JsonFileHandler:
                     "subtype": entry["subtype"]
                 }
         return None
+
+    def search_entries(self, query="", filters=None):
+        if filters is None:
+            filters = {}
+
+        results = []
+        for entry in self.data:
+            if query and not any(query.lower() in str(entry[key]).lower() for key in entry):
+                continue
+
+            match = True
+            for key, value in filters.items():
+                if value != "Не важно" and str(entry.get(key, "")) != value:
+                    match = False
+                    break
+
+            if match:
+                results.append(entry)
+
+        return results
+
+    def get_all_values_for_key(self, key):
+        return sorted(set(str(entry.get(key, "")) for entry in self.data))
