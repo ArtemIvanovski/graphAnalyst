@@ -54,12 +54,10 @@ class GraphWindow(QMainWindow):
                     background: #bcbcbc;
                 }
             """)
-        # Кнопка "Reload"
         reload_action = QAction(QIcon("assets/iconRefresh.png"), "Перезагрузить", self)
         reload_action.triggered.connect(self.reload_graph)
         self.toolbar.addAction(reload_action)
 
-        # Меню "Трансформация"
         self.transform_menu = QMenu(self)
         transform_action = QAction(QIcon("assets/iconTransform.png"), "Трансформация", self)
         self.toolbar.addAction(transform_action)
@@ -165,7 +163,6 @@ class GraphWindow(QMainWindow):
         self.toolbar.addAction(export_action)
         export_action.triggered.connect(self.export_graph)
 
-        # График
         self.plot_widget = self.create_plot()
         self.layout.addWidget(self.plot_widget)
 

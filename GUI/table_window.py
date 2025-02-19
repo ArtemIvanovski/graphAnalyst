@@ -1,19 +1,12 @@
-import json
 import os
-import sys
 
 from PyQt5.QtCore import Qt, QPoint
 from PyQt5.QtGui import QFont, QColor, QBrush, QIcon
-from PyQt5.QtWidgets import QApplication, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QAction, QMenu
+from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QAction, QMenu
 
-from GUI.error_window import ErrorWindow
-from GUI.graph_window import GraphWindow
-from GUI.loading_window import LoadingWindow
 from GUI.table_utils import make_bold, get_param_coil
-from core.json_table_handler import JsonFileHandler
 from core.proccesing_mixin import ProcessingMixin
 from core.settings_handler import get_resource_path
-from core.threads.file_processing_thread import FileProcessingThread
 
 
 class TableWindow(QWidget, ProcessingMixin):

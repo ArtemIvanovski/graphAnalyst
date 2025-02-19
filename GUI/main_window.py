@@ -1,7 +1,7 @@
 import os
 
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QFont, QIcon, QMovie
+from PyQt5.QtGui import QFont, QIcon
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog
 
 from GUI.error_window import ErrorWindow
