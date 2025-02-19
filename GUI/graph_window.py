@@ -12,19 +12,18 @@ from PyQt5.QtWidgets import (
     QHBoxLayout, QWidgetAction, QFileDialog, QMessageBox
 )
 
+from core.settings_handler import get_resource_path
+
 
 class GraphWindow(QMainWindow):
-    def __init__(self, metadata, data_frame, main_window, app):
+    def __init__(self, metadata, data_frame, filename):
         super().__init__()
-        self.app = app
         self.data_frame = data_frame
         self.metadata = metadata
-        self.main_window = main_window
         self.line_color = "b"
-
-        self.setWindowTitle("Graph Viewer")
+        self.setWindowTitle(f"Graph Viewer {filename}")
         self.showMaximized()
-        self.setWindowIcon(QIcon("assets/icon.png"))
+        self.setWindowIcon(QIcon(get_resource_path("assets/icon.png")))
 
         self.main_widget = QWidget()
         self.setCentralWidget(self.main_widget)
@@ -40,13 +39,13 @@ class GraphWindow(QMainWindow):
                 QToolBar {
                     background: #e0e0e0;
                     padding: 5px;
-                    spacing: 10px;  /* Отступы между кнопками */
+                    spacing: 10px;  
                 }
                 QToolButton {
-                    border: 1px solid #ccc;  /* Граница в 1 пиксель */
+                    border: 1px solid #ccc;  
                     padding: 5px;
                     background: white;
-                    border-radius: 4px;  /* Закругленные края */
+                    border-radius: 4px;  
                 }
                 QToolButton:hover {
                     background: #dcdcdc;
@@ -64,7 +63,7 @@ class GraphWindow(QMainWindow):
         self.transform_menu = QMenu(self)
         transform_action = QAction(QIcon("assets/iconTransform.png"), "Трансформация", self)
         self.toolbar.addAction(transform_action)
-        transform_action.triggered.connect(lambda: self.transform_menu.exec_(self.toolbar.mapToGlobal(QPoint(45, 46))))
+        transform_action.triggered.connect(lambda: self.transform_menu.exec_(self.toolbar.mapToGlobal(QPoint(60, 58))))
 
         self.checkboxes = {}
         transform_options = ["Power Spectrum (FFT)", "Log X", "Log Y", "dy/dx"]
@@ -79,7 +78,7 @@ class GraphWindow(QMainWindow):
         self.grid_menu = QMenu(self)
         grid_action = QAction(QIcon("assets/iconGrid.png"), "Сетка", self)
         self.toolbar.addAction(grid_action)
-        grid_action.triggered.connect(lambda: self.transform_menu.exec_(self.toolbar.mapToGlobal(QPoint(85, 46))))
+        grid_action.triggered.connect(lambda: self.grid_menu.exec_(self.toolbar.mapToGlobal(QPoint(116, 58))))
 
         self.show_x_grid = QCheckBox("Show X Grid", self)
         self.show_x_grid.setChecked(True)
@@ -117,7 +116,7 @@ class GraphWindow(QMainWindow):
         y_axis_action = QAction(QIcon("assets/iconYAxis.png"), "Ось Y", self)
         self.toolbar.addAction(y_axis_action)
         self.y_axis_menu = QMenu(self)
-        y_axis_action.triggered.connect(lambda: self.y_axis_menu.exec_(self.toolbar.mapToGlobal(QPoint(120, 46))))
+        y_axis_action.triggered.connect(lambda: self.y_axis_menu.exec_(self.toolbar.mapToGlobal(QPoint(172, 58))))
 
         self.y_invert_axis = QCheckBox("Invert Axis", self)
         self.y_invert_axis.stateChanged.connect(
@@ -137,7 +136,7 @@ class GraphWindow(QMainWindow):
         x_axis_action = QAction(QIcon("assets/iconXAxis.png"), "Ось X", self)
         self.toolbar.addAction(x_axis_action)
         self.x_axis_menu = QMenu(self)
-        x_axis_action.triggered.connect(lambda: self.x_axis_menu.exec_(self.toolbar.mapToGlobal(QPoint(160, 46))))
+        x_axis_action.triggered.connect(lambda: self.x_axis_menu.exec_(self.toolbar.mapToGlobal(QPoint(228, 58))))
 
         self.x_invert_axis = QCheckBox("Invert Axis", self)
         self.x_invert_axis.stateChanged.connect(
@@ -266,26 +265,17 @@ class GraphWindow(QMainWindow):
 
     def save_as_excel(self, file_path):
         df = pd.DataFrame({"X (Time)": self.x_data, "Y (Voltage)": self.y_data})
-
-        # Сохранение в файл Excel
         df.to_excel(file_path, index=False, sheet_name="Graph Data")
 
         QMessageBox.information(self, "Экспорт завершен", f"График сохранен как {file_path}")
-
-    def return_to_main(self):
-        self.close()
-        self.main_window.show()
-
-    def closeEvent(self, event):
-        self.main_window.show()
-        event.accept()
 
     def show_metadata_info(self):
         info_text = "\n".join(f"{key}: {value}" for key, value in self.metadata.items())
         QMessageBox.information(self, "Graph Metadata", info_text)
 
     def change_line_color(self):
-        color = QColorDialog.getColor()
+        color_dialog = QColorDialog(self)
+        color = color_dialog.getColor()
 
         if color.isValid():
             self.line_color = color.name()
@@ -293,3 +283,5 @@ class GraphWindow(QMainWindow):
 
             self.plot_widget.setLabel("left", "Voltage (mV)", **{"color": self.line_color, "font-size": "14pt"})
             self.plot_widget.setLabel("bottom", "Time (µs)", **{"color": self.line_color, "font-size": "14pt"})
+
+

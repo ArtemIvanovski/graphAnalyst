@@ -1,24 +1,33 @@
 import json
+import os
 import sys
 
 from PyQt5.QtCore import Qt, QPoint
-from PyQt5.QtGui import QFont, QColor, QBrush
+from PyQt5.QtGui import QFont, QColor, QBrush, QIcon
 from PyQt5.QtWidgets import QApplication, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QAction, QMenu
 
+from GUI.error_window import ErrorWindow
+from GUI.graph_window import GraphWindow
+from GUI.loading_window import LoadingWindow
 from GUI.table_utils import make_bold, get_param_coil
+from core.json_table_handler import JsonFileHandler
+from core.settings_handler import get_resource_path
+from core.threads.file_processing_thread import FileProcessingThread
 
 
-class TableApp(QWidget):
-    def __init__(self):
+class TableWindow(QWidget):
+    def __init__(self, json_file_handler):
         super().__init__()
+        self.filename = None
+        self.graph_window = None
+        self.file_processing_thread = None
+        self.loading_window = None
         self.setWindowTitle("Таблица файлов")
-
-        self.resize(1000, 600)
+        self.setWindowIcon(QIcon(get_resource_path("assets/icon.png")))
+        self.json_file_handler = json_file_handler
+        self.resize(1136, 568)
         self.selected_row = 0
         self.selected_col = 0
-        self.json_path = "table.json"
-        with open(self.json_path, "r", encoding="utf-8") as file:
-            self.data = json.load(file)
 
         self.table = QTableWidget()
         self.table.setColumnCount(22)
@@ -54,7 +63,7 @@ class TableApp(QWidget):
         for row in range(3, 18):
             for col in range(2, 22):
                 sample, time_ms, type_, type_2, subtype = get_param_coil(row, col)
-                filename = self.get_filename(sample, time_ms, type_, type_2, subtype)
+                filename = self.json_file_handler.get_filename(sample, time_ms, type_, type_2, subtype)
                 if filename:
                     self.table.setItem(row, col, QTableWidgetItem(filename))
 
@@ -167,12 +176,6 @@ class TableApp(QWidget):
         menu.addAction(edit_action)
         menu.exec_(self.table.viewport().mapToGlobal(pos))
 
-    def open_graph(self):
-        item = self.table.item(self.selected_row, self.selected_col)
-        if item:
-            filename = item.text() + ".txt"
-            print(filename)
-
     def edit_cell(self):
         item = self.table.item(self.selected_row, self.selected_col)
         if item:
@@ -185,27 +188,43 @@ class TableApp(QWidget):
         if item.row() == self.selected_row and item.column() == self.selected_col:
             new_value = item.text()
             sample, time_ms, type_, type_2, subtype = get_param_coil(self.selected_row, self.selected_col)
-
-            for entry in self.data:
-                if (entry["sample"] == sample and entry["time_ms"] == time_ms and
-                        entry["type"] == type_ and entry["type_2"] == type_2 and entry["subtype"] == subtype):
-                    entry["filename"] = new_value + ".txt"
-                    break
-
-            with open(self.json_path, "w", encoding="utf-8") as file:
-                json.dump(self.data, file, indent=4, ensure_ascii=False)
+            self.json_file_handler.update_filename(sample, time_ms, type_, type_2, subtype, new_value)
             self.table.itemChanged.disconnect(self.save_to_json)
 
-    def get_filename(self, sample, time_ms, type_, type_2, subtype):
-        for item in self.data:
-            if (item["sample"] == sample and item["time_ms"] == time_ms and
-                    item["type"] == type_ and item["type_2"] == type_2 and item["subtype"] == subtype):
-                return item["filename"][0:-4]
-        return None
+    def open_graph(self):
+        item = self.table.item(self.selected_row, self.selected_col)
+        if item:
+            self.filename = item.text() + ".txt"
+            filepath = os.path.join("./library/", self.filename)
+            self.start_processing(filepath)
+
+    def start_processing(self, file_path):
+        self.loading_window = LoadingWindow(self)
+        self.loading_window.show()
+
+        self.file_processing_thread = FileProcessingThread(file_path, self.json_file_handler)
+        self.file_processing_thread.finished.connect(self.on_processing_finished)
+        self.file_processing_thread.start()
+
+    def on_processing_finished(self, metadata, status):
+        self.loading_window.close()
+
+        if status == "error":
+            error_dialog = ErrorWindow(f"Ошибка обработки файла: {metadata.get('error', 'Неизвестная ошибка')}")
+            error_dialog.exec_()
+            return
+
+        data_frame = self.file_processing_thread.data_frame
+        self.open_graph_window(metadata, data_frame)
+
+    def open_graph_window(self, metadata, data_frame):
+        self.graph_window = GraphWindow(metadata, data_frame, self.filename)
+        self.graph_window.show()
 
 
 if __name__ == "__main__":
+    json_file_handler = JsonFileHandler(get_resource_path("library/table.json"))
     app = QApplication(sys.argv)
-    window = TableApp()
+    window = TableWindow(json_file_handler)
     window.show()
     sys.exit(app.exec_())
