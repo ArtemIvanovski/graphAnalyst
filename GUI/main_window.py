@@ -100,7 +100,7 @@ class MainWindow(QWidget, ProcessingMixin):
 
     def open_manual_graph(self):
         file_path, _ = QFileDialog.getOpenFileName(
-            self, "Выберите файл .txt", "./library/", "Text Files (*.txt)"
+            self, "Выберите файл .txt", get_resource_path("library/"), "Text Files (*.txt)"
         )
         if not file_path:
             return

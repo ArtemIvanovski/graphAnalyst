@@ -27,12 +27,12 @@ class TableWindow(QWidget, ProcessingMixin):
         self.table.setColumnCount(22)
         self.table.setRowCount(18)
 
-        headers = ["", "", "без провр", "", "", "", "15 с", "", "", "", "30 с", "", "", "", "45 с", "", "", "", "60 с",
+        headers = ["", "", "без протравливания", "", "", "", "15 с", "", "", "", "30 с", "", "", "", "45 с", "", "", "", "60 с",
                    "", "", ""]
-        sub_headers = ["", "", "вест s", "", "приш", "", "вест s", "", "приш", "", "вест s", "", "приш", "", "вест s",
-                       "", "приш", "", "вест s", "", "приш", ""]
-        sub_sub_headers = ["", "", "сл.", "F", "сл.", "F", "сл.", "F", "сл.", "F", "сл.", "F", "сл.", "F", "сл.", "F",
-                           "сл.", "F", "сл.", "F", "сл.", "F", "сл.", "F"]
+        sub_headers = ["", "", "вестибулярная поверхность", "", "пришеечная область", "", "вестибулярная поверхность", "", "пришеечная область", "", "вестибулярная поверхность", "", "пришеечная область", "", "вестибулярная поверхность",
+                       "", "пришеечная область", "", "вестибулярная поверхность", "", "пришеечная область", ""]
+        sub_sub_headers = ["", "", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная",
+                           "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная"]
 
         for row, data in enumerate([headers, sub_headers, sub_sub_headers]):
             for col, text in enumerate(data):
@@ -82,6 +82,8 @@ class TableWindow(QWidget, ProcessingMixin):
             self.table.setRowHeight(row, 30)
         for col in range(self.table.columnCount()):
             self.table.setColumnWidth(col, 50)
+        self.table.resizeColumnsToContents()
+        self.table.resizeRowsToContents()
         self.table.resizeColumnsToContents()
         self.table.resizeRowsToContents()
         layout = QVBoxLayout()
@@ -189,5 +191,5 @@ class TableWindow(QWidget, ProcessingMixin):
         item = self.table.item(self.selected_row, self.selected_col)
         if item:
             self.filename = item.text() + ".txt"
-            filepath = os.path.join("./library/", self.filename)
-            self.start_processing(filepath)
+            filepath = os.path.join("library/", self.filename)
+            self.start_processing(get_resource_path(filepath))

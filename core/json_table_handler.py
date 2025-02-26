@@ -19,17 +19,17 @@ class JsonFileHandler:
         with open(self.file_path, "w", encoding="utf-8") as file:
             json.dump(self.data, file, indent=4, ensure_ascii=False)
 
-    def get_filename(self, sample, time_ms, type_, type_2, subtype):
+    def get_filename(self, sample, time_ms, pickling_time, localization, intensity):
         for entry in self.data:
             if (entry["sample"] == sample and entry["time_ms"] == time_ms and
-                    entry["type"] == type_ and entry["type_2"] == type_2 and entry["subtype"] == subtype):
+                    entry["pickling_time"] == pickling_time and entry["localization"] == localization and entry["intensity"] == intensity):
                 return entry["filename"].replace(".txt", "")
         return None
 
-    def update_filename(self, sample, time_ms, type_, type_2, subtype, new_filename):
+    def update_filename(self, sample, time_ms, pickling_time, localization, intensity, new_filename):
         for entry in self.data:
             if (entry["sample"] == sample and entry["time_ms"] == time_ms and
-                    entry["type"] == type_ and entry["type_2"] == type_2 and entry["subtype"] == subtype):
+                    entry["pickling_time"] == pickling_time and entry["localization"] == localization and entry["intensity"] == intensity):
                 entry["filename"] = f"{new_filename}.txt"
                 self.save_data()
                 return True
@@ -39,11 +39,11 @@ class JsonFileHandler:
         for entry in self.data:
             if entry["filename"] == filename:
                 return {
-                    "sample": entry["sample"],
-                    "time_ms": entry["time_ms"],
-                    "type": entry["type"],
-                    "type_2": entry["type_2"],
-                    "subtype": entry["subtype"]
+                    "Образец": entry["sample"],
+                    "Время": entry["time_ms"],
+                    "Время протравливания": entry["pickling_time"],
+                    "Локализация": entry["localization"],
+                    "Интенсивность": entry["intensity"]
                 }
         return None
 

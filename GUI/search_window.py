@@ -42,23 +42,23 @@ class SearchWindow(QWidget, ProcessingMixin):
                                                 ["Не важно"] + self.json_file_handler.get_all_values_for_key("sample"))
         self.time_filter = self.create_filter("time_ms",
                                               ["Не важно"] + self.json_file_handler.get_all_values_for_key("time_ms"))
-        self.type_filter = self.create_filter("type",
-                                              ["Не важно"] + self.json_file_handler.get_all_values_for_key("type"))
-        self.type2_filter = self.create_filter("type_2",
-                                               ["Не важно"] + self.json_file_handler.get_all_values_for_key("type_2"))
-        self.subtype_filter = self.create_filter("subtype",
+        self.type_filter = self.create_filter("pickling_time",
+                                              ["Не важно"] + self.json_file_handler.get_all_values_for_key("pickling_time"))
+        self.type2_filter = self.create_filter("localization",
+                                               ["Не важно"] + self.json_file_handler.get_all_values_for_key("localization"))
+        self.subtype_filter = self.create_filter("intensity",
                                                  ["Не важно"] + self.json_file_handler.get_all_values_for_key(
-                                                     "subtype"))
+                                                     "intensity"))
 
-        filters_layout.addWidget(QLabel("Sample:"))
+        filters_layout.addWidget(QLabel("Образец:"))
         filters_layout.addWidget(self.sample_filter)
-        filters_layout.addWidget(QLabel("Time:"))
+        filters_layout.addWidget(QLabel("Время:"))
         filters_layout.addWidget(self.time_filter)
-        filters_layout.addWidget(QLabel("Type:"))
+        filters_layout.addWidget(QLabel("Время протравливания:"))
         filters_layout.addWidget(self.type_filter)
-        filters_layout.addWidget(QLabel("Type2:"))
+        filters_layout.addWidget(QLabel("Локализация:"))
         filters_layout.addWidget(self.type2_filter)
-        filters_layout.addWidget(QLabel("Subtype:"))
+        filters_layout.addWidget(QLabel("Интенсивность:"))
         filters_layout.addWidget(self.subtype_filter)
 
         self.results_list = QListWidget(self)
@@ -86,22 +86,22 @@ class SearchWindow(QWidget, ProcessingMixin):
         filters = {
             "sample": self.sample_filter.currentText(),
             "time_ms": self.time_filter.currentText(),
-            "type": self.type_filter.currentText(),
-            "type_2": self.type2_filter.currentText(),
-            "subtype": self.subtype_filter.currentText(),
+            "pickling_time": self.type_filter.currentText(),
+            "localization": self.type2_filter.currentText(),
+            "intensity": self.subtype_filter.currentText(),
         }
 
         results = self.json_file_handler.search_entries(query, filters)
         self.results_list.clear()
 
         for entry in results:
-            display_text = f"{entry['filename']} | {entry['sample']} | {entry['time_ms']} | {entry['type']} | {entry['type_2']} | {entry['subtype']}"
+            display_text = f"{entry['filename']} | {entry['sample']} | {entry['time_ms']} | {entry['pickling_time']} | {entry['localization']} | {entry['intensity']}"
             self.results_list.addItem(display_text)
 
     def open_selected_file(self):
         selected_item = self.results_list.currentItem()
         if selected_item:
             self.filename = selected_item.text().split(" | ")[0]
-            filepath = os.path.join("./library/", self.filename)
-            self.start_processing(filepath)
+            filepath = os.path.join("library/", self.filename)
+            self.start_processing(get_resource_path(filepath))
 

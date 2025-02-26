@@ -54,12 +54,12 @@ class GraphWindow(QMainWindow):
                     background: #bcbcbc;
                 }
             """)
-        reload_action = QAction(QIcon("assets/iconRefresh.png"), "Перезагрузить", self)
+        reload_action = QAction(QIcon(get_resource_path("assets/iconRefresh.png")), "Перезагрузить", self)
         reload_action.triggered.connect(self.reload_graph)
         self.toolbar.addAction(reload_action)
 
         self.transform_menu = QMenu(self)
-        transform_action = QAction(QIcon("assets/iconTransform.png"), "Трансформация", self)
+        transform_action = QAction(QIcon(get_resource_path("assets/iconTransform.png")), "Трансформация", self)
         self.toolbar.addAction(transform_action)
         transform_action.triggered.connect(lambda: self.transform_menu.exec_(self.toolbar.mapToGlobal(QPoint(60, 58))))
 
@@ -74,7 +74,7 @@ class GraphWindow(QMainWindow):
             self.transform_menu.addAction(action)
 
         self.grid_menu = QMenu(self)
-        grid_action = QAction(QIcon("assets/iconGrid.png"), "Сетка", self)
+        grid_action = QAction(QIcon(get_resource_path("assets/iconGrid.png")), "Сетка", self)
         self.toolbar.addAction(grid_action)
         grid_action.triggered.connect(lambda: self.grid_menu.exec_(self.toolbar.mapToGlobal(QPoint(116, 58))))
 
@@ -111,7 +111,7 @@ class GraphWindow(QMainWindow):
         action_opacity.setDefaultWidget(slider_widget)
         self.grid_menu.addAction(action_opacity)
 
-        y_axis_action = QAction(QIcon("assets/iconYAxis.png"), "Ось Y", self)
+        y_axis_action = QAction(QIcon(get_resource_path("assets/iconYAxis.png")), "Ось Y", self)
         self.toolbar.addAction(y_axis_action)
         self.y_axis_menu = QMenu(self)
         y_axis_action.triggered.connect(lambda: self.y_axis_menu.exec_(self.toolbar.mapToGlobal(QPoint(172, 58))))
@@ -131,7 +131,7 @@ class GraphWindow(QMainWindow):
         action_y_mouse.setDefaultWidget(self.y_mouse_enabled)
         self.y_axis_menu.addAction(action_y_mouse)
 
-        x_axis_action = QAction(QIcon("assets/iconXAxis.png"), "Ось X", self)
+        x_axis_action = QAction(QIcon(get_resource_path("assets/iconXAxis.png")), "Ось X", self)
         self.toolbar.addAction(x_axis_action)
         self.x_axis_menu = QMenu(self)
         x_axis_action.triggered.connect(lambda: self.x_axis_menu.exec_(self.toolbar.mapToGlobal(QPoint(228, 58))))
@@ -151,15 +151,15 @@ class GraphWindow(QMainWindow):
         action_x_mouse.setDefaultWidget(self.x_mouse_enabled)
         self.x_axis_menu.addAction(action_x_mouse)
 
-        info_action = QAction(QIcon("assets/iconInfo.png"), "Info", self)
+        info_action = QAction(QIcon(get_resource_path("assets/iconInfo.png")), "Info", self)
         self.toolbar.addAction(info_action)
         info_action.triggered.connect(self.show_metadata_info)
 
-        color_action = QAction(QIcon("assets/iconTrend.png"), "Изменить цвет линии", self)
+        color_action = QAction(QIcon(get_resource_path("assets/iconTrend.png")), "Изменить цвет линии", self)
         self.toolbar.addAction(color_action)
         color_action.triggered.connect(self.change_line_color)
 
-        export_action = QAction(QIcon("assets/iconExport.png"), "Экспорт", self)
+        export_action = QAction(QIcon(get_resource_path("assets/iconExport.png")), "Экспорт", self)
         self.toolbar.addAction(export_action)
         export_action.triggered.connect(self.export_graph)
 

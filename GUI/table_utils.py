@@ -12,11 +12,11 @@ def make_bold(table, cells):
 
 
 def get_param_coil(row, col):
-    subtype = "сл." if col % 2 == 0 else "F"
+    subtype = "слабая" if col % 2 == 0 else "сильная"
 
-    type_2 = "вест S" if ((col - 2) // 2) % 2 == 0 else "приш"
+    type_2 = "вестибулярная поверхность" if ((col - 2) // 2) % 2 == 0 else "пришеечная область"
 
-    type_dict = {range(2, 6): "без провр", range(6, 10): "15 с", range(10, 14): "30 с",
+    type_dict = {range(2, 6): "без протравливания", range(6, 10): "15 с", range(10, 14): "30 с",
                  range(14, 18): "45 с", range(18, 22): "60 с"}
     type_ = next((v for k, v in type_dict.items() if col in k), None)
 
