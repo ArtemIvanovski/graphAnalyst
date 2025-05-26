@@ -104,4 +104,3 @@ class SearchWindow(QWidget, ProcessingMixin):
             self.filename = selected_item.text().split(" | ")[0]
             filepath = os.path.join("library/", self.filename)
             self.start_processing(get_resource_path(filepath))
-

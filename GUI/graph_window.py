@@ -1,8 +1,10 @@
+import re
+
 import numpy as np
 import pandas as pd
 import pyqtgraph as pg
 import pyqtgraph.exporters
-from PyQt5.QtCore import Qt, QPoint
+from PyQt5.QtCore import Qt, QPoint, QRectF
 from PyQt5.QtGui import QIcon
 from PyQt5.QtGui import QPainter
 from PyQt5.QtPrintSupport import QPrinter
@@ -11,6 +13,8 @@ from PyQt5.QtWidgets import (
     QMainWindow, QVBoxLayout, QWidget, QToolBar, QAction, QMenu, QCheckBox, QSlider, QLabel,
     QHBoxLayout, QWidgetAction, QFileDialog, QMessageBox
 )
+from pyqtgraph import ImageView, PlotItem, PlotWidget, ImageItem, GradientEditorItem, ColorBarItem, GraphicsLayoutWidget
+from scipy.signal import stft
 
 from core.settings_handler import get_resource_path
 
@@ -162,8 +166,93 @@ class GraphWindow(QMainWindow):
         export_action = QAction(QIcon(get_resource_path("assets/iconExport.png")), "Экспорт", self)
         self.toolbar.addAction(export_action)
         export_action.triggered.connect(self.export_graph)
-
+        self.add_spectrogram_button()
         self.plot_widget = self.create_plot()
+        self.layout.addWidget(self.plot_widget)
+
+    def parse_time_interval(self):
+        return self.metadata.get("Время", "") * 1e-3
+
+    def add_spectrogram_button(self):
+        spec_action = QAction(QIcon(get_resource_path("assets/iconSpectrogram.png")),
+                              "Спектрограмма", self)
+        spec_action.triggered.connect(self.show_spectrogram)
+        self.toolbar.addAction(spec_action)
+
+    def show_spectrogram(self):
+        y = self.y_data.astype(float)
+        dt = self.parse_time_interval()  # сек
+        fs = 1.0 / dt  # Гц
+
+
+        # y — входной сигнал (массив отсчётов напряжения).
+        # fs — частота дискретизации (в герцах), здесь 1/dt.
+        # nperseg — длина окна анализа в отсчётах (здесь 256). STFT «разрезает» сигнал на перекрывающиеся фреймы по 256 точек.
+        # noverlap — сколько точек соседние окна перекрываются (здесь 128, то есть половина окна).
+        # window='hann' — тип оконной функции (Ханна) для уменьшения утечек спектра.
+        # padded=False и boundary=None — отключают автоматическое расширение сигнала нулями (никакого паддинга перед первым и после последнего окна).
+
+        nperseg, noverlap = 256, 128
+        f, t, Z = stft(y, fs=fs,
+                       nperseg=nperseg,
+                       noverlap=noverlap,
+                       window='hann', padded=False, boundary=None)
+
+        # f — одномерный массив частот (в Гц), размерностью nperseg/2+1. Это ось Y для спектрограммы.
+        # t — одномерный массив временных меток (в секундах), размерностью равной количеству окон. Это ось X для спектрограммы — центры окон.
+        # Z — двумерный комплексный массив формы (len(f), len(t)). Модуль |Z| показывает амплитуду каждой частотной компоненты в каждом окне.
+
+        S = 20 * np.log10(np.abs(Z) + 1e-12)
+        S = S.T
+
+        N = len(self.x_data)
+        expected_dur = N * dt
+        last_center = t[-1]
+        half_win = (nperseg * dt) / 2
+        eff_dur = last_center + half_win
+        diff = abs(eff_dur - expected_dur)
+
+        print(f"[Test] Длительность исходного сигнала N×dt = {expected_dur:.6f}s")
+        print(f"[Test] Когда центральное окно анализа в последний раз «скользит» по сигналу  = {last_center:.6f}s")
+        print(f"[Test] Насколько STFT «выходит» за края, когда окно наполовину выходит за границу данных = {half_win:.6f}s")
+        print(f"[Test] Реальная длина покрытия STFT, включая «хвост» половины окна = {eff_dur:.6f}s")
+        print(f"[Test] Разница между эффективной и заявленной длительностью Δ = {diff:.6f}s → {'OK' if diff <= half_win else 'WARN'}")
+
+        nyq = fs / 2
+        print(f"[Test] Полоса пропускания дискретизации = fs/2 = {nyq:.1f}Hz, максимальное значение оси f = {f[-1]:.1f}Hz")
+
+        Y = np.abs(np.fft.rfft(y))
+        freqs = np.fft.rfftfreq(N, dt)
+        peak = freqs[np.argmax(Y)]
+        print(f"[Test] Наиболее выраженная гармоника всего сигнала (реальная частота основного тона) = {peak:.1f}Hz")
+
+        if self.plot_widget is not None:
+            self.layout.removeWidget(self.plot_widget)
+            self.plot_widget.deleteLater()
+            self.plot_widget = None
+
+        glw = GraphicsLayoutWidget()
+        glw.setBackground('w')
+
+        p = glw.addPlot(row=0, col=0)
+        p.showGrid(x=True, y=True, alpha=0.3)
+        p.setLabel('bottom', 'Time', units='s')
+        p.setLabel('left', 'Frequency', units='Hz')
+
+        img = ImageItem(S)
+        rect = QRectF(t[0], f[0], t[-1] - t[0], f[-1] - f[0])
+        img.setRect(rect)
+        p.addItem(img)
+
+        cmap = pg.colormap.get('inferno')
+        lut = cmap.getLookupTable(0.0, 1.0, 256)
+        img.setLookupTable(lut)
+        img.setLevels([S.min(), S.max()])
+
+        cbar = ColorBarItem(values=(S.min(), S.max()), colorMap=cmap, interactive=False)
+        glw.addItem(cbar, row=0, col=1)
+
+        self.plot_widget = glw
         self.layout.addWidget(self.plot_widget)
 
     def create_plot(self):
@@ -218,8 +307,10 @@ class GraphWindow(QMainWindow):
         self.plot_widget.showGrid(x=self.show_x_grid.isChecked(), y=self.show_y_grid.isChecked(), alpha=alpha)
 
     def reload_graph(self):
-        self.layout.removeWidget(self.plot_widget)
-        self.plot_widget.deleteLater()
+        if self.plot_widget is not None:
+            self.layout.removeWidget(self.plot_widget)
+            self.plot_widget.deleteLater()
+            self.plot_widget = None
         self.plot_widget = self.create_plot()
         self.layout.addWidget(self.plot_widget)
 
@@ -281,5 +372,3 @@ class GraphWindow(QMainWindow):
 
             self.plot_widget.setLabel("left", "Voltage (mV)", **{"color": self.line_color, "font-size": "14pt"})
             self.plot_widget.setLabel("bottom", "Time (µs)", **{"color": self.line_color, "font-size": "14pt"})
-
-
