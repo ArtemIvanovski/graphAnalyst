@@ -6,6 +6,7 @@ from PyQt5.QtWidgets import QWidget, QVBoxLayout, QPushButton, QLabel, QFileDial
 
 from GUI.error_window import ErrorWindow
 from GUI.help_window import HelpWindow
+from GUI.poster_window import PosterWindow
 from GUI.search_window import SearchWindow
 from GUI.table_window import TableWindow
 from core.data_frame_utils import validate_file_format
@@ -25,10 +26,11 @@ class MainWindow(QWidget, ProcessingMixin):
         self.file_path = None
         self.table_window = None
         self.help_window = None
+        self.poster_window = None
         self.json_file_handler = JsonFileHandler(get_resource_path("library/table.json"))
         self.setWindowTitle("Graph Analyst")
         self.setWindowIcon(QIcon(get_resource_path("assets/icon.png")))
-        self.setGeometry(200, 200, 600, 400)
+        self.setGeometry(200, 200, 600, 450)
 
         title_font = QFont("Arial", 18, QFont.Bold)
 
@@ -45,6 +47,9 @@ class MainWindow(QWidget, ProcessingMixin):
         self.open_manual_button = self.create_button("📂 Открыть график вручную")
         self.open_manual_button.clicked.connect(self.open_manual_graph)
 
+        self.create_poster_button = self.create_button("📊 Создать плакат")
+        self.create_poster_button.clicked.connect(self.show_poster_window)
+
         self.user_guide_button = self.create_button("📖 Руководство пользователя")
         self.user_guide_button.clicked.connect(self.show_help_window)
 
@@ -54,6 +59,7 @@ class MainWindow(QWidget, ProcessingMixin):
         layout.addWidget(self.open_search_button)
         layout.addWidget(self.open_table_button)
         layout.addWidget(self.open_manual_button)
+        layout.addWidget(self.create_poster_button)
         layout.addWidget(self.user_guide_button)
 
         self.setLayout(layout)
@@ -97,6 +103,12 @@ class MainWindow(QWidget, ProcessingMixin):
             self.search_window = SearchWindow(self.json_file_handler)
         self.search_window.show()
         self.child_windows.append(self.search_window)
+
+    def show_poster_window(self):
+        if not hasattr(self, 'poster_window') or not self.poster_window:
+            self.poster_window = PosterWindow(self.json_file_handler)
+        self.poster_window.show()
+        self.child_windows.append(self.poster_window)
 
     def open_manual_graph(self):
         file_path, _ = QFileDialog.getOpenFileName(

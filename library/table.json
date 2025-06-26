@@ -2398,5 +2398,2405 @@
         "localization": "пришеечная область",
         "intensity": "сильная",
         "filename": "300.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "301.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "302.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "303.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "304.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "361.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "362.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "363.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "364.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "421.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "422.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "423.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "424.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "481.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "482.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "483.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "484.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "541.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "542.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "543.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "544.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "305.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "306.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "307.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "308.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "365.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "366.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "367.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "368.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "425.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "426.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "427.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "428.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "485.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "486.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "487.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "488.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "545.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "546.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "547.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "548.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "309.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "310.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "311.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "312.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "369.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "370.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "371.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "372.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "429.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "430.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "431.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "432.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "489.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "490.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "491.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "492.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "549.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "550.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "551.txt"
+    },
+    {
+        "sample": 46,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "552.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "313.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "314.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "315.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "316.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "373.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "374.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "375.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "376.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "433.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "434.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "435.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "436.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "493.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "494.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "495.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "496.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "553.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "554.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "555.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "556.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "317.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "318.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "319.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "320.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "377.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "378.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "379.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "380.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "437.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "438.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "439.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "440.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "497.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "498.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "499.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "500.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "557.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "558.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "559.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "560.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "321.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "322.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "323.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "324.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "381.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "382.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "383.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "384.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "441.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "442.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "443.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "444.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "501.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "502.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "503.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "504.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "561.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "562.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "563.txt"
+    },
+    {
+        "sample": 47,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "564.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "325.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "326.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "327.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "328.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "385.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "386.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "387.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "388.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "457.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "458.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "459.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "460.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "505.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "506.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "507.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "508.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "565.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "566.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "567.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "568.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "329.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "330.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "331.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "332.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "389.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "390.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "391.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "392.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "461.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "462.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "463.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "464.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "509.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "510.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "511.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "512.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "569.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "570.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "571.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "572.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "333.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "334.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "335.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "336.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "393.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "394.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "395.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "396.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "465.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "466.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "467.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "468.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "513.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "514.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "515.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "516.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "573.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "574.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "575.txt"
+    },
+    {
+        "sample": 48,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "576.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "337.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "338.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "339.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "340.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "397.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "398.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "399.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "400.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "445.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "446.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "447.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "448.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "517.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "518.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "519.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "520.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "577.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "578.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "579.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "580.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "341.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "342.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "343.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "344.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "401.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "402.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "403.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "404.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "449.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "450.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "451.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "452.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "521.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "522.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "523.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "524.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "581.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "582.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "583.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "584.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "345.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "346.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "347.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "348.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "405.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "406.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "407.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "408.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "453.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "454.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "455.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "456.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "525.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "526.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "527.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "528.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "585.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "586.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "587.txt"
+    },
+    {
+        "sample": 49,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "588.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "349.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "350.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "351.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "352.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "409.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "410.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "411.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "412.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "469.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "470.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "471.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "472.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "529.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "530.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "531.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "532.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "589.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "590.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "591.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 2,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "592.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "353.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "354.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "356.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "355.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "413.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "414.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "415.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "416.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "473.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "474.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "475.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "476.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "533.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "534.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "535.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "536.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "593.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "594.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "595.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 5,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "596.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "357.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "358.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "359.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "без протравливания",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "360.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "417.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "418.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "419.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "15 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "420.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "477.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "478.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "479.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "30 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "480.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "537.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "538.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "539.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "45 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "540.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "слабая",
+        "filename": "597.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "вестибулярная поверхность",
+        "intensity": "сильная",
+        "filename": "598.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "слабая",
+        "filename": "599.txt"
+    },
+    {
+        "sample": 50,
+        "time_ms": 10,
+        "pickling_time": "60 с",
+        "localization": "пришеечная область",
+        "intensity": "сильная",
+        "filename": "600.txt"
     }
 ]

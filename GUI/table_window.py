@@ -25,13 +25,17 @@ class TableWindow(QWidget, ProcessingMixin):
 
         self.table = QTableWidget()
         self.table.setColumnCount(22)
-        self.table.setRowCount(18)
+        self.table.setRowCount(33)  # Увеличено с 18 до 33 (3 заголовка + 30 строк данных)
 
-        headers = ["", "", "без протравливания", "", "", "", "15 с", "", "", "", "30 с", "", "", "", "45 с", "", "", "", "60 с",
+        headers = ["", "", "без протравливания", "", "", "", "15 с", "", "", "", "30 с", "", "", "", "45 с", "", "", "",
+                   "60 с",
                    "", "", ""]
-        sub_headers = ["", "", "вестибулярная поверхность", "", "пришеечная область", "", "вестибулярная поверхность", "", "пришеечная область", "", "вестибулярная поверхность", "", "пришеечная область", "", "вестибулярная поверхность",
+        sub_headers = ["", "", "вестибулярная поверхность", "", "пришеечная область", "", "вестибулярная поверхность",
+                       "", "пришеечная область", "", "вестибулярная поверхность", "", "пришеечная область", "",
+                       "вестибулярная поверхность",
                        "", "пришеечная область", "", "вестибулярная поверхность", "", "пришеечная область", ""]
-        sub_sub_headers = ["", "", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная",
+        sub_sub_headers = ["", "", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная",
+                           "слабая", "сильная", "слабая", "сильная", "слабая", "сильная",
                            "слабая", "сильная", "слабая", "сильная", "слабая", "сильная", "слабая", "сильная"]
 
         for row, data in enumerate([headers, sub_headers, sub_sub_headers]):
@@ -44,17 +48,21 @@ class TableWindow(QWidget, ProcessingMixin):
         for i in range(2, 22, 2):
             self.table.setSpan(1, i, 1, 2)
 
-        samples = ["41", "", "", "42", "", "", "43", "", "", "44", "", "", "45", "", ""]
-        time_mss = ["2", "5", "10", "2", "5", "10", "2", "5", "10", "2", "5", "10", "2", "5", "10"]
+        # Расширенный список образцов 41-50
+        samples = ["41", "", "", "42", "", "", "43", "", "", "44", "", "", "45", "", "",
+                   "46", "", "", "47", "", "", "48", "", "", "49", "", "", "50", "", ""]
+        time_mss = ["2", "5", "10", "2", "5", "10", "2", "5", "10", "2", "5", "10", "2", "5", "10",
+                    "2", "5", "10", "2", "5", "10", "2", "5", "10", "2", "5", "10", "2", "5", "10"]
 
         for row, (sample, time_ms) in enumerate(zip(samples, time_mss), start=3):
             self.table.setItem(row, 0, QTableWidgetItem(sample))
             self.table.setItem(row, 1, QTableWidgetItem(time_ms))
 
-        for i in range(3, 16, 3):
+        # Обновленные диапазоны для объединения ячеек образцов
+        for i in range(3, 33, 3):  # Изменено с range(3, 16, 3) до range(3, 33, 3)
             self.table.setSpan(i, 0, 3, 1)
 
-        for row in range(3, 18):
+        for row in range(3, 33):  # Изменено с range(3, 18) до range(3, 33)
             for col in range(2, 22):
                 sample, time_ms, type_, type_2, subtype = get_param_coil(row, col)
                 filename = self.json_file_handler.get_filename(sample, time_ms, type_, type_2, subtype)
@@ -77,18 +85,93 @@ class TableWindow(QWidget, ProcessingMixin):
         self.table.verticalHeader().setVisible(False)
         self.table.horizontalHeader().setVisible(False)
 
-        make_bold(self.table, [(3, 0), (6, 0), (9, 0), (12, 0), (15, 0)])
+        # Обновленный список для выделения образцов жирным шрифтом
+        make_bold(self.table, [(3, 0), (6, 0), (9, 0), (12, 0), (15, 0), (18, 0), (21, 0), (24, 0), (27, 0), (30, 0)])
+
+        # Применяем форматирование и цветовое выделение групп образцов
+        self.apply_table_formatting()
+
         for row in range(self.table.rowCount()):
-            self.table.setRowHeight(row, 30)
-        for col in range(self.table.columnCount()):
-            self.table.setColumnWidth(col, 50)
-        self.table.resizeColumnsToContents()
-        self.table.resizeRowsToContents()
-        self.table.resizeColumnsToContents()
-        self.table.resizeRowsToContents()
+            self.table.setRowHeight(row, 35)  # Увеличена высота строк для лучшей читаемости
+
+        # Настройка ширины столбцов
+        self.setup_column_widths()
+
         layout = QVBoxLayout()
         layout.addWidget(self.table)
         self.setLayout(layout)
+
+    def apply_table_formatting(self):
+        """Применяет цветовое форматирование для групп образцов"""
+
+        # Цвета для чередования групп образцов
+        group_colors = [
+            QColor(240, 248, 255),  # Alice Blue - светло-голубой
+            QColor(245, 255, 250),  # Mint Cream - светло-зеленый
+            QColor(255, 248, 240),  # Orange - светло-оранжевый
+            QColor(248, 240, 255),  # Lavender - светло-фиолетовый
+            QColor(255, 240, 245),  # Lavender Blush - светло-розовый
+            QColor(240, 255, 240),  # Honeydew - светло-зеленый
+            QColor(255, 255, 240),  # Ivory - светло-желтый
+            QColor(240, 255, 255),  # Azure - светло-голубой
+            QColor(255, 240, 240),  # Misty Rose - светло-розовый
+            QColor(248, 248, 255),  # Ghost White - почти белый
+        ]
+
+        # Применяем цвета к группам образцов (каждые 3 строки)
+        for sample_group in range(10):  # 10 образцов (41-50)
+            start_row = 3 + sample_group * 3
+            end_row = start_row + 3
+            color = group_colors[sample_group % len(group_colors)]
+
+            for row in range(start_row, min(end_row, self.table.rowCount())):
+                for col in range(self.table.columnCount()):
+                    item = self.table.item(row, col)
+                    if item:
+                        item.setBackground(QBrush(color))
+
+    def setup_column_widths(self):
+        """Настраивает ширину столбцов по содержимому"""
+
+        # Сначала подгоняем размеры по содержимому
+        self.table.resizeColumnsToContents()
+        self.table.resizeRowsToContents()
+
+        # Устанавливаем минимальную ширину для столбцов
+        column_min_widths = {
+            0: 80,  # Sample - номер образца
+            1: 60,  # Time - время
+        }
+
+        # Для столбцов с данными файлов (2-21) устанавливаем единую ширину
+        data_column_width = 80
+
+        for col in range(self.table.columnCount()):
+            if col in column_min_widths:
+                current_width = self.table.columnWidth(col)
+                min_width = column_min_widths[col]
+                self.table.setColumnWidth(col, max(current_width, min_width))
+            elif col >= 2:  # Столбцы с данными файлов
+                self.table.setColumnWidth(col, data_column_width)
+
+    def add_sample_separators(self):
+        """Добавляет визуальные разделители между группами образцов"""
+        # Применяем стили для выделения границ между группами
+        style_sheet = """
+            QTableWidget {
+                gridline-color: #CCCCCC;
+                selection-background-color: #3399FF;
+            }
+            QTableWidget::item {
+                border: 1px solid #E0E0E0;
+                padding: 4px;
+            }
+            QTableWidget::item:selected {
+                background-color: #3399FF;
+                color: white;
+            }
+        """
+        self.table.setStyleSheet(style_sheet)
 
     def highlight_intersection(self, row, col):
         self.selected_row = row
@@ -126,8 +209,9 @@ class TableWindow(QWidget, ProcessingMixin):
                 item.setBackground(QBrush(QColor(173, 216, 230)))
                 item.setForeground(QBrush(Qt.black))
 
-        row_groups = {range(3, 5): 3, range(6, 8): 6, range(9, 11): 9,
-                      range(12, 14): 12, range(15, 17): 15}
+        # Обновленные диапазоны для выделения строк образцов
+        row_groups = {range(3, 6): 3, range(6, 9): 6, range(9, 12): 9, range(12, 15): 12, range(15, 18): 15,
+                      range(18, 21): 18, range(21, 24): 21, range(24, 27): 24, range(27, 30): 27, range(30, 33): 30}
 
         make_bold(self.table, [(row, 1)])
 
