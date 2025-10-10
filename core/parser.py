@@ -28,6 +28,17 @@ def parse_metadata(lines):
 
 def parse_data(lines):
     data = []
+
+    time_interval = 20e-6
+    for line in lines:
+        if "Time interval" in line and ":" in line:
+            interval_str = line.split(":")[1].strip()
+            if "uS" in interval_str or "µS" in interval_str:
+                time_interval = float(interval_str.replace("uS", "").replace("µS", "").strip()) * 1e-6
+            elif "ms" in interval_str:
+                time_interval = float(interval_str.replace("ms", "").strip()) * 1e-3
+            break
+
     start_idx = next(i for i, line in enumerate(lines) if line.strip().startswith("index"))
 
     for line in lines[start_idx + 1:]:
@@ -36,7 +47,9 @@ def parse_data(lines):
             parts = line.split()
             if len(parts) >= 2:
                 index, voltage = int(parts[0]), float(parts[1])
-                data.append((index, voltage))
+                time_us = (index - 1) * time_interval * 1e6
+                data.append((time_us, voltage, time_interval))
 
-    df = pd.DataFrame(data, columns=["Index", "Voltage (mV)"])
+    df = pd.DataFrame(data, columns=["Time (µs)", "Voltage (mV)", "dt"])
     return df
+

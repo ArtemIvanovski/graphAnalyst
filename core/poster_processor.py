@@ -1,5 +1,7 @@
 import os
 import shutil
+from scipy import signal
+
 import numpy as np
 import pyqtgraph as pg
 from pyqtgraph import GraphicsLayoutWidget, ImageItem, ColorBarItem
@@ -17,12 +19,10 @@ class PosterProcessor:
         self.json_file_handler = json_file_handler
         self.temp_folder = get_resource_path("temp")
 
-        # Очищаем папку temp перед началом
         if os.path.exists(self.temp_folder):
             shutil.rmtree(self.temp_folder)
         os.makedirs(self.temp_folder, exist_ok=True)
 
-        # Настраиваем pyqtgraph для работы с белым фоном
         pg.setConfigOption('background', 'w')
         pg.setConfigOption('foreground', 'k')
 
@@ -32,7 +32,6 @@ class PosterProcessor:
 
         print("[Info] Создание индивидуальных спектрограмм...")
 
-        # Создаем отдельные спектрограммы
         for pickling_time in pickling_times:
             filters = selected_params.copy()
             filters["pickling_time"] = pickling_time
@@ -60,33 +59,23 @@ class PosterProcessor:
 
     def process_single_file(self, file_path, pickling_time, params):
         try:
-            # Парсим файл
             metadata, data_frame = parse_file_with_metadata(file_path, self.json_file_handler)
 
-            x_data = data_frame["Index"].values
+            x_data = data_frame["Time (µs)"].values
             y_data = data_frame["Voltage (mV)"].values.astype(float)
 
-            # Создаем имя файла
+            dt = data_frame["dt"].iloc[0] if "dt" in data_frame.columns else 20e-6
+            fs = 1.0 / dt
+            y_data = self.apply_highpass_filter(y_data, fs, cutoff_freq=500, order=3)
+
             filename_base = f"{params['sample']}_{params['time_ms']}_{pickling_time.replace(' ', '_').replace('/', '_')}"
             output_path = os.path.join(self.temp_folder, f"{filename_base}.png")
 
-            # Парсим интервал дискретизации
-            time_interval_str = metadata.get("Time interval", "20.00000uS")
-
-            if "uS" in str(time_interval_str) or "µS" in str(time_interval_str):
-                dt = float(str(time_interval_str).replace("uS", "").replace("µS", "").strip()) * 1e-6
-            elif "ms" in str(time_interval_str):
-                dt = float(str(time_interval_str).replace("ms", "").strip()) * 1e-3
-            else:
-                dt = 20e-6
-
-            dt = dt / 2
-            fs = 1.0 / dt
-
             print(f"[Info] Обработка файла: {os.path.basename(file_path)}")
             print(f"[Info] Время протравливания: {pickling_time}")
+            print(f"[Info] Интервал дискретизации: {dt * 1e6:.2f} мкс")
+            print(f"[Info] Частота дискретизации: {fs:.1f} Гц")
 
-            # Настройки для STFT
             window_duration = 0.002
             nperseg = int(window_duration * fs)
 
@@ -105,7 +94,6 @@ class PosterProcessor:
                 print(f"[Error] Некорректные параметры окна для файла {file_path}")
                 return None
 
-            # Вычисляем STFT
             f, t, Z = stft(y_data, fs=fs,
                            nperseg=nperseg,
                            noverlap=noverlap,
@@ -118,41 +106,36 @@ class PosterProcessor:
             S_dB = 10 * np.log10(S + 1e-12)
             S_dB = S_dB.T
 
-            # Создаем GraphicsLayoutWidget для отдельной спектрограммы
             glw = GraphicsLayoutWidget()
-            glw.resize(520, 420)  # Размер для горизонтальной компоновки
+            glw.resize(520, 420)
             glw.setBackground('w')
 
-            # Добавляем заголовок с временем протравливания
             title_text = f"{pickling_time}"
             title_label = glw.addLabel(title_text, row=0, col=0, colspan=2)
             title_label.setText(title_text, size='12pt', bold=True)
 
-            # Спектрограмма
             p2 = glw.addPlot(row=1, col=0)
             p2.showGrid(x=True, y=True, alpha=0.3)
             p2.setLabel('bottom', 'Время (с)', size='12pt')
             p2.setLabel('left', 'Частота (Гц)', size='12pt')
 
-            # Создаем изображение спектрограммы
             img = ImageItem(S_dB)
             rect = QRectF(t[0], f[0], t[-1] - t[0], f[-1] - f[0])
             img.setRect(rect)
             p2.addItem(img)
 
-            # Настраиваем цветовую карту
             colors = [
-                (0.0, (0, 0, 139)),  # темно-синий
-                (0.1, (0, 0, 255)),  # синий
-                (0.2, (0, 100, 255)),  # голубой
-                (0.3, (0, 255, 255)),  # циан
-                (0.4, (0, 255, 100)),  # светло-зеленый
-                (0.5, (0, 255, 0)),  # зеленый
-                (0.6, (100, 255, 0)),  # желто-зеленый
-                (0.7, (255, 255, 0)),  # желтый
-                (0.8, (255, 150, 0)),  # оранжевый
-                (0.9, (255, 50, 0)),  # красно-оранжевый
-                (1.0, (139, 0, 0))  # темно-красный
+                (0.0, (0, 0, 139)),
+                (0.1, (0, 0, 255)),
+                (0.2, (0, 100, 255)),
+                (0.3, (0, 255, 255)),
+                (0.4, (0, 255, 100)),
+                (0.5, (0, 255, 0)),
+                (0.6, (100, 255, 0)),
+                (0.7, (255, 255, 0)),
+                (0.8, (255, 150, 0)),
+                (0.9, (255, 50, 0)),
+                (1.0, (139, 0, 0))
             ]
 
             cmap = pg.ColorMap(
@@ -164,14 +147,12 @@ class PosterProcessor:
             img.setLookupTable(lut)
             img.setLevels([S_dB.min(), S_dB.max()])
 
-            # View All
             p2.setXRange(t[0], t[-1])
             p2.setYRange(f[0], f[-1])
             p2.setAspectLocked(False)
             p2.getViewBox().setMenuEnabled(False)
             p2.getViewBox().setMouseEnabled(x=False, y=False)
 
-            # Добавляем маленькую цветовую шкалу
             cbar = ColorBarItem(
                 values=(S_dB.min(), S_dB.max()),
                 colorMap=cmap,
@@ -180,10 +161,8 @@ class PosterProcessor:
             )
             glw.addItem(cbar, row=1, col=1)
 
-            # Обновляем интерфейс
             QApplication.processEvents()
 
-            # Сохраняем
             pixmap = glw.grab()
             success = pixmap.save(output_path, "PNG")
 
@@ -202,42 +181,32 @@ class PosterProcessor:
 
     def combine_spectrograms(self, created_files, params):
         try:
-            # Размеры финального плаката (1920x1080)
             final_width = 1920
             final_height = 1080
 
-            # Создаем финальный QPixmap
             final_pixmap = QPixmap(final_width, final_height)
             final_pixmap.fill(Qt.white)
 
             painter = QPainter(final_pixmap)
 
-            # Размеры для каждой спектрограммы
-            margin = 25  # Отступ между спектрограммами
-            spec_width = 600  # Ширина спектрограммы
-            spec_height = 500  # Высота спектрограммы
+            margin = 25
+            spec_width = 600
+            spec_height = 500
 
-            # Начальные координаты
             start_x = 40
             start_y = 50
 
-            # Позиции для размещения спектрограмм
-            # Первая строка: без протравливания, 15 с, 30 с
-            # Вторая строка: 45 с, 60 с
             positions = {
-                "без_протравливания": (start_x, start_y),  # первая строка, первая колонка
-                "15_с": (start_x + spec_width + margin, start_y),  # первая строка, вторая колонка
-                "30_с": (start_x + 2 * (spec_width + margin), start_y),  # первая строка, третья колонка
-                "45_с": (start_x, start_y + spec_height + margin),  # вторая строка, первая колонка
+                "без_протравливания": (start_x, start_y),
+                "15_с": (start_x + spec_width + margin, start_y),
+                "30_с": (start_x + 2 * (spec_width + margin), start_y),
+                "45_с": (start_x, start_y + spec_height + margin),
                 "60_с": (start_x + spec_width + margin, start_y + spec_height + margin),
-                # вторая строка, вторая колонка
             }
 
-            # Размещаем спектрограммы
             for file_path in created_files:
                 filename = os.path.basename(file_path)
 
-                # Определяем время протравливания из имени файла
                 if "без_протравливания" in filename:
                     pos = positions["без_протравливания"]
                 elif "15_с" in filename:
@@ -251,17 +220,14 @@ class PosterProcessor:
                 else:
                     continue
 
-                # Загружаем и размещаем изображение
                 spec_pixmap = QPixmap(file_path)
                 if not spec_pixmap.isNull():
-                    # Масштабируем до нужного размера
                     spec_pixmap = spec_pixmap.scaled(spec_width, spec_height, Qt.KeepAspectRatio,
                                                      Qt.SmoothTransformation)
                     painter.drawPixmap(pos[0], pos[1], spec_pixmap)
 
-            # Добавляем характеристики справа от второй строки спектрограмм
             characteristics_x = start_x + 2 * (spec_width + margin)
-            characteristics_y = start_y + spec_height + margin + 50  # Рядом со второй строкой
+            characteristics_y = start_y + spec_height + margin + 50
             characteristics_width = final_width - characteristics_x - 50
             characteristics_height = 300
 
@@ -271,7 +237,6 @@ class PosterProcessor:
 
             painter.end()
 
-            # Сохраняем финальный плакат
             final_path = os.path.join(self.temp_folder, "final_poster.png")
             success = final_pixmap.save(final_path, "PNG")
 
@@ -291,14 +256,11 @@ class PosterProcessor:
     def add_characteristics_text(self, painter, params, position, size):
         """Добавляет характеристики в указанную область"""
         try:
-            # Настройка шрифта (размер 20)
             font = QFont("Arial", 16, QFont.Bold)
             painter.setFont(font)
 
-            # Цвет рамки и текста
             painter.setPen(Qt.black)
 
-            # Текст характеристик
             characteristics = [
                 "Характеристики образца:",
                 "",
@@ -308,7 +270,6 @@ class PosterProcessor:
                 f"Интенсивность: {params['intensity']}"
             ]
 
-            # Рисуем текст
             y_offset = position[1] + 40
             line_height = 35
 
@@ -318,6 +279,85 @@ class PosterProcessor:
 
         except Exception as e:
             print(f"[Error] Ошибка при добавлении характеристик: {e}")
+
+    def apply_highpass_filter(self, y_data, fs, cutoff_freq=500, order=3):
+        """Применяет фильтр высоких частот к сигналу"""
+        try:
+            nyquist = fs / 2
+            normalized_cutoff = cutoff_freq / nyquist
+
+            if normalized_cutoff >= 1.0:
+                print(f"[Warning] Частота среза {cutoff_freq} Гц слишком высока для fs={fs} Гц")
+                return y_data
+
+            b, a = signal.butter(order, normalized_cutoff, btype='high')
+
+            filtered_data = signal.filtfilt(b, a, y_data)
+
+            print(f"[Info] Применен ВЧ фильтр: {cutoff_freq} Гц, порядок {order}")
+            return filtered_data
+
+        except Exception as e:
+            print(f"[Error] Ошибка применения фильтра: {e}")
+            return y_data
+
+    def create_sample_posters_batch(self, sample_number, output_folder=None):
+        """Создает все плакаты для определенного образца с фильтрацией"""
+
+        if output_folder is None:
+            output_folder = get_resource_path(f"posters_sample_{sample_number}")
+
+        os.makedirs(output_folder, exist_ok=True)
+
+        # Параметры для перебора
+        time_variants = [2, 5, 10]  # мс
+        localizations = ["вестибулярная поверхность", "пришеечная область"]
+        intensities = ["слабая", "сильная"]
+
+        created_posters = []
+        total_posters = len(time_variants) * len(localizations) * len(intensities)
+        current_poster = 0
+
+        print(f"[Info] Начинаем создание {total_posters} плакатов для образца {sample_number}")
+        print(f"[Info] Сохранение в папку: {output_folder}")
+
+        for time_ms in time_variants:
+            for localization in localizations:
+                for intensity in intensities:
+                    current_poster += 1
+                    print(f"\n[Progress] Плакат {current_poster}/{total_posters}")
+                    print(f"[Info] Параметры: {sample_number}, {time_ms}мс, {localization}, {intensity}")
+
+                    params = {
+                        'sample': str(sample_number),
+                        'time_ms': str(time_ms),
+                        'localization': localization,
+                        'intensity': intensity
+                    }
+
+                    poster_path = self.create_poster(params)
+
+                    if poster_path:
+                        safe_localization = localization.replace(' ', '_').replace('/', '_')
+                        safe_intensity = intensity.replace(' ', '_').replace('/', '_')
+
+                        final_filename = f"образец_{sample_number}_{time_ms}мс_{safe_localization}_{safe_intensity}.png"
+                        final_path = os.path.join(output_folder, final_filename)
+
+                        shutil.copy2(poster_path, final_path)
+                        created_posters.append(final_path)
+
+                        print(f"[Success] Плакат сохранен: {final_filename}")
+                    else:
+                        print(f"[Error] Не удалось создать плакат для параметров: {params}")
+
+                    self.cleanup_temp_folder()
+                    os.makedirs(self.temp_folder, exist_ok=True)
+
+        print(f"\n[Complete] Создано {len(created_posters)} плакатов из {total_posters}")
+        print(f"[Info] Все плакаты сохранены в: {output_folder}")
+
+        return created_posters, output_folder
 
     def cleanup_temp_folder(self):
         """Очищает временную папку"""

@@ -50,6 +50,11 @@ class MainWindow(QWidget, ProcessingMixin):
         self.create_poster_button = self.create_button("📊 Создать плакат")
         self.create_poster_button.clicked.connect(self.show_poster_window)
 
+        self.batch_poster_button = self.create_button("📊 Создать плакаты для образца")
+        self.batch_poster_button.clicked.connect(self.show_batch_poster_window)
+
+        # В layout.addWidget после других кнопок:
+
         self.user_guide_button = self.create_button("📖 Руководство пользователя")
         self.user_guide_button.clicked.connect(self.show_help_window)
 
@@ -60,6 +65,7 @@ class MainWindow(QWidget, ProcessingMixin):
         layout.addWidget(self.open_table_button)
         layout.addWidget(self.open_manual_button)
         layout.addWidget(self.create_poster_button)
+        layout.addWidget(self.batch_poster_button)
         layout.addWidget(self.user_guide_button)
 
         self.setLayout(layout)
@@ -103,6 +109,11 @@ class MainWindow(QWidget, ProcessingMixin):
             self.search_window = SearchWindow(self.json_file_handler)
         self.search_window.show()
         self.child_windows.append(self.search_window)
+
+    def show_batch_poster_window(self):
+        from GUI.batch_poster_window import BatchPosterWindow
+        batch_window = BatchPosterWindow(self.json_file_handler, self)
+        batch_window.exec_()
 
     def show_poster_window(self):
         if not hasattr(self, 'poster_window') or not self.poster_window:

@@ -3,7 +3,7 @@ from core.poster_processor import PosterProcessor
 
 
 class PosterProcessingThread(QThread):
-    finished = pyqtSignal(str, str, str)  # final_poster_path, temp_folder, status
+    finished = pyqtSignal(str, str, str)
 
     def __init__(self, selected_params, json_file_handler):
         super().__init__()

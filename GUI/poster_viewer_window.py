@@ -176,7 +176,7 @@ class PosterViewerWindow(QMainWindow):
                 localization_clean = str(localization).replace(' ', '_').replace('/', '_')
                 intensity_clean = str(intensity).replace(' ', '_').replace('/', '_')
 
-                default_filename = f"plakat_obrazec_{sample_clean}_{time_clean}ms_{localization_clean}_{intensity_clean}.png"
+                default_filename = f"плакат_образец_{sample_clean}_{time_clean}мс_{localization_clean}_{intensity_clean}.png"
             else:
                 default_filename = "spectrograms_poster.png"
 
